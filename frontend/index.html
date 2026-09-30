@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fireshaw - Certified Fire Protection & Safety Equipment</title>
+    <meta name="description" content="Official store for Fireshaw Fire Safety Equipment. ISI/CE certified fire extinguishers, smoke detectors, fire blankets, hydrant accessories, and safety gear." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ef4444'><path d='M12 2c1.5 3 4 5 4 9 0 3.3-2.7 6-6 6s-6-2.7-6-6c0-4 3.5-6.5 4.5-9 .5 2 1.5 3 3.5 0z'/></svg>" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN with custom branding colors -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              display: ['"Space Grotesk"', 'sans-serif'],
+            },
+            colors: {
+              fire: {
+                50: '#fff1f1',
+                100: '#ffe1e1',
+                200: '#ffc7c7',
+                300: '#ffa0a0',
+                400: '#ff6666',
+                500: '#ef4444',
+                600: '#dc2626',
+                700: '#b91c1c',
+                800: '#991b1b',
+                900: '#7f1d1d',
+                950: '#450a0a',
+              },
+              safety: {
+                amber: '#f59e0b',
+                gold: '#fbbf24',
+                dark: '#0f172a',
+                charcoal: '#1e293b',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #f8fafc;
+        color: #0f172a;
+      }
+      /* Custom scrollbars */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
